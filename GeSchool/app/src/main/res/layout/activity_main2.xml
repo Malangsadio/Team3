@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:padding="5dp"
+    tools:context=".Main2Activity">
+
+    <TableLayout
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <ListView
+        android:id="@+id/ListViewIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:padding="10dp"
+        android:layout_span="2"
+        android:textStyle="bold"
+        android:background="#c0c0c0"
+        >
+
+    </ListView>
+    </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
