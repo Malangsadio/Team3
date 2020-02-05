@@ -6,19 +6,17 @@ public class User {
     private String Prenom;
     private String Adresse;
     private String Niveau;
-
-    public User() {
-
-    }
+    private String Phone;
 
 
-    public User(String id, String nom, String prenom, String adresse, String niveau ) {
+
+    public User(String id, String nom, String prenom, String adresse, String niveau, String phone) {
         idUser = id;
         Nom = nom;
         Prenom = prenom;
         Adresse = adresse;
         Niveau = niveau;
-
+        Phone = phone;
     }
 
     public String getIdUser() {
@@ -60,6 +58,12 @@ public class User {
     public void setNiveau(String niveau) {
         Niveau = niveau;
     }
+    public String getPhone() {
+        return Phone;
+    }
 
+    public void setPhone(String phone) {
+        Phone = phone;
+    }
 
 }

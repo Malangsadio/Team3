@@ -43,12 +43,21 @@
         android:hint="Niveau Classe" />
 
 
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Numéro tuteur"/>
+
     <Button
         android:id="@+id/btnInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INSERT"
         android:onClick="btnInsert"
+        android:text="INSERT"
         tools:ignore="OnClick" />
 
 </LinearLayout>

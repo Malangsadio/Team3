@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Main9Activity extends AppCompatActivity {
-    EditText nom, prenom, adresse, niveau;
+    EditText nom, prenom, adresse, niveau, phone;
     Button insert;
     DatabaseReference ref;
     User user;
@@ -33,7 +33,8 @@ public class Main9Activity extends AppCompatActivity {
         prenom = (EditText) findViewById(R.id.prenom);
         adresse = (EditText) findViewById(R.id.adresse);
         niveau = (EditText) findViewById(R.id.niveau);
-
+        phone = (EditText) findViewById(R.id.phone);
+        insert = (Button) findViewById(R.id.btnInsert);
 
         insert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,11 +50,12 @@ public class Main9Activity extends AppCompatActivity {
         String prenome = prenom.getText().toString().trim();
         String adressee = adresse.getText().toString().trim();
         String niveaux = niveau.getText().toString().trim();
+        String phonee = phone.getText().toString().trim();
 
 
         if (!TextUtils.isEmpty(nome)) {
             String id = ref.push().getKey();
-            User user = new User(id, nome, prenome, adressee, niveaux);
+            User user = new User(id, nome, prenome, adressee, niveaux,phonee);
             ref.child(id).setValue(user);
             Toast.makeText(Main9Activity.this, "Data inserted....", Toast.LENGTH_LONG).show();
         }else {
