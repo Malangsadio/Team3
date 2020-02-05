@@ -14,6 +14,7 @@ import java.util.List;
 
 public class AdpterPost extends ArrayAdapter<Post> {
     /**
+     *
      * Constructor
      *
      * @param context  The current context.
