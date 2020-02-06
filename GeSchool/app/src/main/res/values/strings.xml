@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GeSchool</string>
+    <string name="fourniture_et_inscription">FOURNITURE ET INSCRIPTION</string>
+    <string name="emploie_du_temps">EMPLOIE DU TEMPS</string>
+    <string name="insertion">Insertion</string>
+    <string name="inscription">Inscription</string>
+    <string name="acceuil">ACCEUIL</string>
 </resources>
