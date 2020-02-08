@@ -17,8 +17,6 @@ public class AdpterPost extends ArrayAdapter<Post> {
      * Constructor
      *
      * @param context  The current context.
-     * @param resource The resource ID for a layout file containing a TextView to use when
-     *                 instantiating views.
      * @param objects  The objects to represent in the ListView.
      */
     public AdpterPost(@NonNull Context context, @NonNull List<Post> objects) {
