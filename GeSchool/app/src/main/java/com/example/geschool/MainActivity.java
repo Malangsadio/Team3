@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "firebase connexion success", Toast.LENGTH_SHORT).show();
-        emp_tps = (Button) findViewById(R.id.emp_tps);
-        fou_ins = (Button) findViewById(R.id.fou_ins);
-        inserer = (Button) findViewById(R.id.inserer);
+        emp_tps = (Button) findViewById(R.id.button5);
+        fou_ins = (Button) findViewById(R.id.button6);
+        inserer = (Button) findViewById(R.id.button7);
 
         fou_ins.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".enregistrement"></activity>
+
+        <activity android:name=".ListeClasse"></activity>
+
         <activity android:name=".Main9Activity" />
         <activity android:name=".sixieme" />
         <activity android:name=".Cinquieme" />
