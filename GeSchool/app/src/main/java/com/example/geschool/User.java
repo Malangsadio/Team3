@@ -2,21 +2,19 @@ package com.example.geschool;
 
 public class User {
     private String idUser;
-    private String Nom;
-    private String Prenom;
-    private String Adresse;
-    private String Niveau;
-    private String Phone;
+    private String nom;
+    private String prenom;
+    private String adresse;
+    private String niveau;
+    private String phone;
 
+    public User( String nom, String prenom, String adresse, String niveau, String phone) {
 
-
-    public User(String id, String nom, String prenom, String adresse, String niveau, String phone) {
-        idUser = id;
-        Nom = nom;
-        Prenom = prenom;
-        Adresse = adresse;
-        Niveau = niveau;
-        Phone = phone;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.niveau = niveau;
+        this.phone = phone;
     }
 
     public String getIdUser() {
@@ -28,42 +26,42 @@ public class User {
     }
 
     public String getNom() {
-        return Nom;
+        return nom;
     }
 
     public void setNom(String nom) {
-        Nom = nom;
+        this.nom = nom;
     }
 
     public String getPrenom() {
-        return Prenom;
+        return prenom;
     }
 
     public void setPrenom(String prenom) {
-        Prenom = prenom;
+        this.prenom = prenom;
     }
 
     public String getAdresse() {
-        return Adresse;
+        return adresse;
     }
 
     public void setAdresse(String adresse) {
-        Adresse = adresse;
+        this.adresse = adresse;
     }
 
     public String getNiveau() {
-        return Niveau;
+        return niveau;
     }
 
     public void setNiveau(String niveau) {
-        Niveau = niveau;
+        this.niveau = niveau;
     }
+
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public void setPhone(String phone) {
-        Phone = phone;
+        this.phone = phone;
     }
-
 }

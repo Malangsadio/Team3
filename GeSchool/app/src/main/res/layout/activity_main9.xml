@@ -10,7 +10,7 @@
         android:id="@+id/nom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Nom" />
@@ -19,7 +19,7 @@
         android:id="@+id/prenom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Prenom" />
@@ -28,7 +28,7 @@
         android:id="@+id/adresse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="Adresse" />
@@ -37,7 +37,7 @@
         android:id="@+id/niveau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Niveau Classe" />
@@ -47,17 +47,26 @@
         android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:ems="10"
-        android:inputType="phone"
-        android:hint="Numéro tuteur"/>
+        android:hint="Numéro tuteur"
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/btnInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.15"
         android:onClick="btnInsert"
-        android:text="INSERT"
+        android:text="Ajouter"
         tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnLister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text="Lister"
+         />
 
 </LinearLayout>

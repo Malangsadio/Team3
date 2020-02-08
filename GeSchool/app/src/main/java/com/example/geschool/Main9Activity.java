@@ -3,6 +3,7 @@ package com.example.geschool;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Main9Activity extends AppCompatActivity {
     EditText nom, prenom, adresse, niveau, phone;
-    Button insert;
+    Button insert,lister;
     DatabaseReference ref;
     User user;
 
@@ -35,6 +36,17 @@ public class Main9Activity extends AppCompatActivity {
         niveau = (EditText) findViewById(R.id.niveau);
         phone = (EditText) findViewById(R.id.phone);
         insert = (Button) findViewById(R.id.btnInsert);
+        lister = (Button) findViewById(R.id.btnLister);
+
+        lister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListerClasse();
+
+            }
+
+        });
+
 
         insert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,12 +67,17 @@ public class Main9Activity extends AppCompatActivity {
 
         if (!TextUtils.isEmpty(nome)) {
             String id = ref.push().getKey();
-            User user = new User(id, nome, prenome, adressee, niveaux,phonee);
+            User user = new User(nome, prenome, adressee, niveaux,phonee);
             ref.child(id).setValue(user);
             Toast.makeText(Main9Activity.this, "Data inserted....", Toast.LENGTH_LONG).show();
         }else {
             Toast.makeText(Main9Activity.this, "veuillez saisir les données", Toast.LENGTH_LONG).show();
         }
     }
+    public void openListerClasse(){
+        Intent intent = new Intent(this, ListeClasse.class);
+        startActivity(intent);
+    }
+
 
 }

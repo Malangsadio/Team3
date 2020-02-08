@@ -12,20 +12,20 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-    private Button button2;
-    private Button button3;
+    private Button emp_tps;
+    private Button fou_ins;
+    private Button inserer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "firebase connexion success", Toast.LENGTH_SHORT).show();
-        button = (Button) findViewById(R.id.button5);
-        button2 = (Button) findViewById(R.id.button6);
-        button3 = (Button) findViewById(R.id.button7);
+        emp_tps = (Button) findViewById(R.id.emp_tps);
+        fou_ins = (Button) findViewById(R.id.fou_ins);
+        inserer = (Button) findViewById(R.id.inserer);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        fou_ins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openInsEtFour();
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        emp_tps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMenuEmplois();
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        inserer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openInsertion();
