@@ -6,64 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".ListeClasse">
 
-    <Button
-        android:id="@+id/classe6"
-        android:layout_width="wrap_content"
-        android:layout_height="92dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="243dp"
-        android:layout_marginRight="243dp"
-        android:text="Liste 6 éme "
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/classe5"
-        android:layout_width="wrap_content"
-        android:layout_height="92dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:text="Liste 5 éme "
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <Button
-        android:id="@+id/classe4"
-        android:layout_width="wrap_content"
-        android:layout_height="92dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="243dp"
-        android:layout_marginRight="243dp"
-        android:text="Liste 4 éme "
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Switch" />
 
-    <Button
-        android:id="@+id/classe3"
-        android:layout_width="wrap_content"
-        android:layout_height="92dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:text="Liste 3 éme "
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
