@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1013587064578",
+    "firebase_url": "https://geschool-9e095.firebaseio.com",
+    "project_id": "geschool-9e095",
+    "storage_bucket": "geschool-9e095.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013587064578:android:171520c64a65caa1a8741b",
+        "android_client_info": {
+          "package_name": "com.example.geschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013587064578-b36etcdi3ofqpk70ns5u8fo95gjg8nk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geschool",
+            "certificate_hash": "2d4087571aaa2a9717058f11df1f9c12f9e814c1"
+          }
+        },
+        {
+          "client_id": "1013587064578-si5fhl73jvfejp6l50e19jgd9542i3vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB93AcCRSjAbXDOGM7ul4EouP8brEMyndk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013587064578-si5fhl73jvfejp6l50e19jgd9542i3vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
