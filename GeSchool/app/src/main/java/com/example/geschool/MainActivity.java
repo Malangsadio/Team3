@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button emp_tps;
     private Button fou_ins;
     private Button inserer;
+    private Button notes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         emp_tps = (Button) findViewById(R.id.button5);
         fou_ins = (Button) findViewById(R.id.button6);
         inserer = (Button) findViewById(R.id.button7);
+        notes =(Button) findViewById(R.id.note);
 
         fou_ins.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNotes();
+
+            }
+
+        });
+
 
     }
     public void openInsEtFour(){
@@ -66,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openInsertion(){
         Intent intent = new Intent(this, Main9Activity.class);
+        startActivity(intent);
+    }
+
+    public void openNotes(){
+        Intent intent = new Intent(this, Notes.class);
         startActivity(intent);
     }
 

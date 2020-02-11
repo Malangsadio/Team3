@@ -8,6 +8,10 @@ public class User {
     private String niveau;
     private String phone;
 
+    public User(){
+
+    }
+
     public User( String nom, String prenom, String adresse, String niveau, String phone) {
 
         this.nom = nom;

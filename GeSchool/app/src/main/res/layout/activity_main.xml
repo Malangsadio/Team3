@@ -24,7 +24,7 @@
         android:layout_marginEnd="215dp"
         android:layout_marginRight="246dp"
         android:text="inscription fourniture"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button5"
@@ -41,7 +41,7 @@
         android:layout_marginEnd="26dp"
         android:layout_marginRight="35dp"
         android:text="emploie du temps"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button7"
