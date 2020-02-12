@@ -46,12 +46,14 @@ public class ListeClasse extends AppCompatActivity {
                     userList.clear();
                     for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
 
-                        User user = dataSnapshot1.getValue(User.class);
-                        userList.add(user);
-                    }
-                        listView.setAdapter(customAdapter);
+                           User user = dataSnapshot1.getValue(User.class);
+                           if(user.getNiveau().equals("6eme"))
+                           userList.add(user);
+                       }
 
-                }
+                        listView.setAdapter(customAdapter);
+                    }
+
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {

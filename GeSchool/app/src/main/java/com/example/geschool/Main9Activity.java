@@ -58,14 +58,14 @@ public class Main9Activity extends AppCompatActivity {
 
     private void addUser() {
 
-        String nome = nom.getText().toString().trim();
-        String prenome = prenom.getText().toString().trim();
-        String adressee = adresse.getText().toString().trim();
-        String niveaux = niveau.getText().toString().trim();
+        String nome = nom.getText().toString();
+        String prenome = prenom.getText().toString();
+        String adressee = adresse.getText().toString();
+        String niveaux = niveau.getText().toString();
         String phonee = phone.getText().toString().trim();
 
 
-        if (!TextUtils.isEmpty(nome)) {
+        if (!TextUtils.isEmpty(nome)&&!TextUtils.isEmpty(prenome)) {
             String id = ref.push().getKey();
             User user = new User(nome, prenome, adressee, niveaux,phonee);
             ref.child(id).setValue(user);
@@ -75,7 +75,7 @@ public class Main9Activity extends AppCompatActivity {
         }
     }
     public void openListerClasse(){
-        Intent intent = new Intent(this, ListeClasse.class);
+        Intent intent = new Intent(this, ListerLesClasses.class);
         startActivity(intent);
     }
 

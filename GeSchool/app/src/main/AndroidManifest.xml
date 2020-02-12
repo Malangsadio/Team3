@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Notes"></activity>
+        <activity android:name=".ListeClasse3"></activity>
+        <activity android:name=".ListeClasse4" />
+        <activity android:name=".ListeClasse5" />
+        <activity android:name=".ListerLesClasses" />
+        <activity android:name=".Notes3eme" />
+        <activity android:name=".Notes4eme" />
+        <activity android:name=".Notes5eme" />
+        <activity android:name=".Notes6eme" />
+        <activity android:name=".Notes" />
         <activity android:name=".ListeClasse" />
         <activity android:name=".Main9Activity" />
         <activity android:name=".sixieme" />
