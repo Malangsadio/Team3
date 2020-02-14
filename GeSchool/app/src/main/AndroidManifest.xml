@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListeClasse3"></activity>
+        <activity android:name=".NotifierParent"></activity>
+        <activity android:name=".Notification6eme" />
+        <activity android:name=".Absence" />
+        <activity android:name=".ListeClasse3" />
         <activity android:name=".ListeClasse4" />
         <activity android:name=".ListeClasse5" />
         <activity android:name=".ListerLesClasses" />

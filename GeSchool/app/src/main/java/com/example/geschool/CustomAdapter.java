@@ -43,7 +43,7 @@ public class CustomAdapter  extends ArrayAdapter<User> {
         prenom.setText("Prenom :"+user.getPrenom());
         adresse.setText("Adresse :"+user.getAdresse());
         niveau.setText("Niveau :"+user.getNiveau());
-        phone.setText("Phone :"+user.getPhone());
+        phone.setText("Numéro tuteur :"+user.getPhone());
 
         return view;
     }

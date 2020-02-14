@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button fou_ins;
     private Button inserer;
     private Button notes;
+    private Button absence;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fou_ins = (Button) findViewById(R.id.button6);
         inserer = (Button) findViewById(R.id.button7);
         notes =(Button) findViewById(R.id.note);
+        absence = (Button) findViewById(R.id.absence);
 
         fou_ins.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        absence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAbsence();
+
+            }
+
+        });
+
 
     }
     public void openInsEtFour(){
@@ -82,6 +93,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openNotes(){
         Intent intent = new Intent(this, Notes.class);
+        startActivity(intent);
+    }
+
+    public void openAbsence(){
+        Intent intent = new Intent(this, Absence.class);
         startActivity(intent);
     }
 
